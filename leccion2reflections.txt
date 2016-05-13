@@ -1,0 +1,44 @@
+1-What happens when you initialize a repository? Why do you need to do it?
+it shows a message with the directory of the new git and creates a directory .git with information about the repo and the commits
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+this is a file that save information about the files that you want to store in the next commit 
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+that's beacuse the staging area let you choose the files that you want to be in the commit, and let you to compare the file beetwen directory and stage
+
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+its because you can show what is the parent of a commit and what commit isn't in the branch
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+the result is the master's commit with the new commit features we represent in diagram to know what is the parents of one commit and the parents of the other, and what is the 
+initial file of the branchs;
+
+What are the pros and cons of Git automatic merging vs. always doing merges
+manually?
+
+en caso de merge se sigue el siguiente criterio 
+si a tiene linea y b tambien se mantiene en el archivo merge
+si a o b añaden una linea se añade esa linea
+si a o b elimina una linea del archivo original esta se elimina
+
+cuando se hace un merge se añade el ultimo commit de un branch al ultimo commit del master, se elimina el branch
+y el master adquiere los commit del branch eliminado mezclados por fecha
+si se elimina el branch sin realizar el merge se perderan sus commit
+
+conflictos merge 
+cuando el merge no se lleva a cabo porque hay un conflicto, se abre el archivo en conflicto con el notepad
+y se veran tres secciones del conflicto cada una con un tipo de simbolos 
+la primera head 
+es una parte del codigo en conflicto del branch accedido del merge
+la parte de abajo master
+es el codigo del commit del branch master
+el medio
+es el codigo del archivo original que modificaron branch y master branch
